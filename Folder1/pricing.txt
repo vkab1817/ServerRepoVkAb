@@ -1,0 +1,418 @@
+{
+  "Request": {
+    "inSessionContext1": {
+      "_type": "com.ofss.fc.app.context.SessionContext",
+      "TransactionBranch": "089998",
+      "Channel": "BRN",
+      "ExternalSystemAuditTrailNumber": "0",
+      "ExternalBatchNumber": "0",
+      "BankCode": "08",
+      "UserId": "X008027",
+      "ServiceCallContextType": "N",
+      "LocalDateTimeText": "20180228111502",
+      "TargetUnit": "PB",
+      "SupervisorContext": {
+        "_type": "com.ofss.fc.app.context.UserContext"
+      }
+    },
+    "Service": "WrappedContractApplicationServiceSpiService",
+    "Operation": "public com.ofss.fc.app.pricing.dto.price.WrappedPriceFeatureInquiryResponse com.ofss.fc.appx.pricing.service.contract.WrappedContractApplicationServiceSpi.inquirePriceRecommendation(com.ofss.fc.app.context.SessionContext,com.ofss.fc.app.pricing.dto.context.PricingContractContextDTO,com.ofss.fc.datatype.Date,java.lang.String[],com.ofss.fc.framework.domain.WorkItemViewObjectDTO[],com.ofss.fc.app.udf.udfservice.dto.LinkedUDFDTO) throws com.ofss.fc.infra.exception.FatalException",
+    "TxnData": {
+      "inString4": [
+        "AUD"
+      ],
+      "inPricingContractContextDTO2": {
+        "FactContext": {
+          "_type": "com.ofss.fc.app.fact.dto.context.BankingFactContextDTO",
+          "InputFacts": [
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "Banking",
+              "retrievalKey": "Global.DomainId"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "EL",
+              "retrievalKey": "Global.DomainCategoryId"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "089998",
+              "retrievalKey": "Facility.BranchCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.IntegerFact",
+              "DictionaryArray": [
+                
+              ],
+              "integerValue": "0",
+              "retrievalKey": "CreditFacility.FacilityTermDetails.ApprovedTerm.NumberOfYears"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "CSG22",
+              "retrievalKey": "CreditFacility.ProductGroupCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.MoneyFact",
+              "DictionaryArray": [
+                
+              ],
+              "MoneyValue": {
+                "amount": "0",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "retrievalKey": "CreditFacility.LimitAmount"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BooleanFact",
+              "DictionaryArray": [
+                
+              ],
+              "retrievalKey": "CreditFacility.FacilityProductDetails.IsLowDoc",
+              "booleanValue": "false"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BooleanFact",
+              "DictionaryArray": [
+                
+              ],
+              "retrievalKey": "CreditFacility.FacilityProductDetails.IsEmployee",
+              "booleanValue": "false"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BooleanFact",
+              "DictionaryArray": [
+                
+              ],
+              "retrievalKey": "CreditFacility.IsRevolving",
+              "booleanValue": "true"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.IntegerFact",
+              "DictionaryArray": [
+                
+              ],
+              "integerValue": "1",
+              "retrievalKey": "CreditFacility.FacilityTermDetails.ApprovedTerm.NumberOfMonths"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.MoneyFact",
+              "DictionaryArray": [
+                
+              ],
+              "MoneyValue": {
+                "amount": "0",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "retrievalKey": "Facility.LimitAmount"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.MoneyFact",
+              "DictionaryArray": [
+                
+              ],
+              "MoneyValue": {
+                "amount": "80000",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "retrievalKey": "Facility.SanctionedAmount"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "FC20160890012810",
+              "retrievalKey": "CreditFacility.Id"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.IntegerFact",
+              "DictionaryArray": [
+                
+              ],
+              "integerValue": "0",
+              "retrievalKey": "CreditFacility.FacilityTermDetails.RequestedTerm.NumberOfMonths"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "AUD",
+              "retrievalKey": "Facility.CurrencyCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "FC20160890012810",
+              "retrievalKey": "Facility.Id"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "CSG22",
+              "retrievalKey": "Product.ProductGroup.ProductGroupCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "BE20160890045815",
+              "retrievalKey": "Facility.BorrowingEntityId"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BigDecimalFact",
+              "DictionaryArray": [
+                
+              ],
+              "bigDecimalValue": "8",
+              "retrievalKey": "CreditFacility.FacilityLVRDetails.LVRMarketBased"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "AUD",
+              "retrievalKey": "CreditFacility.CurrencyCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BigDecimalFact",
+              "DictionaryArray": [
+                
+              ],
+              "bigDecimalValue": "10",
+              "retrievalKey": "CreditFacility.FacilityLVRDetails.LVRBankValueBased"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BooleanFact",
+              "DictionaryArray": [
+                
+              ],
+              "retrievalKey": "CreditFacility.FacilityProductDetails.IsCapitalSubvention",
+              "booleanValue": "false"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "089998",
+              "retrievalKey": "CreditFacility.BranchCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.MoneyFact",
+              "DictionaryArray": [
+                
+              ],
+              "MoneyValue": {
+                "amount": "40000",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "retrievalKey": "Facility.FacilityBalanceDetails.AvailableAmount"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.StringFact",
+              "DictionaryArray": [
+                
+              ],
+              "stringValue": "A",
+              "retrievalKey": "CreditFacility.FacilityLVRDetails.LendingCategoryCode"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.IntegerFact",
+              "DictionaryArray": [
+                
+              ],
+              "integerValue": "30",
+              "retrievalKey": "CreditFacility.FacilityTermDetails.RequestedTerm.NumberOfYears"
+            },
+            {
+              "_type": "com.ofss.fc.app.fact.dto.context.BooleanFact",
+              "DictionaryArray": [
+                
+              ],
+              "retrievalKey": "CreditFacility.FacilityProductDetails.IsRural",
+              "booleanValue": "false"
+            },
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "DictionaryArray": [
+            
+          ],
+          "inputFactCounter": "27",
+          "domainCategory": "EL",
+          "domainName": "Banking"
+        },
+        "_type": "com.ofss.fc.app.pricing.dto.context.PricingContractContextDTO",
+        "DictionaryArray": [
+          
+        ],
+        "domain": "Banking",
+        "bundleBenefitsApplicableFlag": "false",
+        "PricingTicketDTO": {
+          "auditSequence": "1",
+          "_type": "com.ofss.fc.app.pricing.dto.ticket.PricingTicketDTO",
+          "Key": {
+            "_type": "com.ofss.fc.app.pricing.dto.ticket.PricingTicketKeyDTO",
+            "DictionaryArray": [
+              
+            ],
+            "ticketNumber": "7f576ba7-8391-48c9-801b-a3d7b4decd20"
+          },
+          "DictionaryArray": [
+            
+          ],
+          "generatedPackageId": "false",
+          "version": "1"
+        },
+        "domainCategory": "EL"
+      },
+      "inDate3": "20160329000000"
+    }
+  }
+}

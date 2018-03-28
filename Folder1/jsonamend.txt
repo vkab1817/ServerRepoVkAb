@@ -1,0 +1,2225 @@
+{
+  "Request": {
+    "inSessionContext1": {
+      "_type": "com.ofss.fc.app.context.SessionContext",
+      "TransactionBranch": "089998",
+      "Channel": "BRN",
+      "ExternalSystemAuditTrailNumber": "0",
+      "ExternalBatchNumber": "0",
+      "BankCode": "08",
+      "UserId": "X008058",
+      "ServiceCallContextType": "N",
+      "LocalDateTimeText": "20171116153004",
+      "TargetUnit": "PB",
+      "SupervisorContext": {
+        "_type": "com.ofss.fc.app.context.UserContext"
+      }
+    },
+    "Service": "SubmissionValidationApplicationServiceSpiService",
+    "Operation": "public com.ofss.fc.service.response.TransactionStatus com.ofss.fc.appx.origination.service.core.submission.validation.SubmissionValidationApplicationServiceSpi.validateBundle(com.ofss.fc.app.context.SessionContext,com.ofss.fc.app.origination.dto.core.submission.SubmissionInputDTO,java.lang.Boolean,com.ofss.fc.framework.domain.WorkItemViewObjectDTO[],com.ofss.fc.app.udf.udfservice.dto.LinkedUDFDTO) throws com.ofss.fc.infra.exception.FatalException",
+    "TxnData": {
+      "inSubmissionInputDTO2": {
+        "PurchaseProperties": [
+          {
+            "auditSequence": "1",
+            "PurchasePrice": {
+              "amount": "111111",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.PurchasePropertyDTO",
+            "isPropertyLinkedForFee": "false",
+            "TransferOfLandValue": {
+              "amount": "111111",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "DictionaryArray": [
+              
+            ],
+            "isPrimaryResidence": "false",
+            "description": "sdfas",
+            "AddressDTO": {
+              "line8": "ST",
+              "line9": "",
+              "line6": "70",
+              "line7": "Alinga",
+              "line4": "Melbourne Building",
+              "line5": "",
+              "state": "ACT",
+              "country": "AU",
+              "city": "CANBERRA",
+              "_type": "com.ofss.fc.datatype.PostalAddress",
+              "postalCode": "2601",
+              "line1": "",
+              "line3": "",
+              "line2": ""
+            },
+            "generatedPackageId": "false",
+            "PurchasePropertyDetailsKeyDTO": {
+              "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.PurchasePropertyKeyDTO",
+              "purchasePropertyID": "PRP20171106000031301"
+            },
+            "version": "1"
+          }
+        ],
+        "DictionaryArray": [
+          [
+            {
+              "FactValue": "false",
+              "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.submission.CustomizedSubmission.IsApprovalInPrincipal"
+            }
+          ]
+        ],
+        "SubmissionHeaderDTO": {
+          "marketEntityId": "NAB",
+          "initiatedBy": "X008058",
+          "SourcedBy": "BAN",
+          "Channel": "BRN",
+          "DictionaryArray": [
+            [
+              {
+                "FactValue": "false",
+                "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.submission.CustomizedHeader.IsWrkPlaceBankingChk"
+              }
+            ]
+          ],
+          "dataEntryBranch": "089998",
+          "managedBy": "X008058",
+          "Priority": "3",
+          "submissionId": "SUB089061117310980",
+          "_type": "com.ofss.fc.app.origination.dto.core.submission.HeaderDTO",
+          "SubmissionCreationDate": "20171106000000",
+          "businessSegmentId": "PB",
+          "targetUnit": "PB",
+          "applicationBranch": "089998",
+          "SubmissionDate": "20171106000000"
+        },
+        "ApplicationTrainStep": "PERSONAL_DETAILS",
+        "ApplicantDataList": [
+          {
+            "PartyDataDTO": {
+              "isPartyValidated": "true",
+              "isPartyDetailsCaptured": "true",
+              "isWorkAddrSame": "false",
+              "externalPartyId": "1000162119023",
+              "DictionaryArray": [
+                
+              ],
+              "isExistingParty": "true",
+              "isApplicantNotPresent": "false",
+              "isUpdatePartyDetailsRequired": "true",
+              "isDeDuplicationRequired": "false",
+              "isCreateOrUpdateFinancialProfileRequired": "false",
+              "_type": "com.ofss.fc.app.party.dto.core.PartyDataDTO",
+              "isIdentityVerificationRequired": "false",
+              "PartyOnboardingDTO": {
+                "auditSequence": "1",
+                "rangeId": "0",
+                "_type": "com.ofss.fc.app.party.dto.core.PartyOnBoardingDTO",
+                "PartyType": "IND",
+                "DictionaryArray": [
+                  [
+                    {
+                      "FactValue": "743068361",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.BUID"
+                    },
+                    {
+                      "FactValue": "POST",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OfferDeliveryChannel"
+                    },
+                    {
+                      "FactValue": "rO0ABXVyADFbTGNvbS5vZnNzLmZjLmFwcC5wYXJ0eS5kdG8uY29yZS5QYXJ0eUFkZHJlc3NEVE87\nJscy8k8xEVwCAAB4cAAAAAJzcgAuY29tLm9mc3MuZmMuYXBwLnBhcnR5LmR0by5jb3JlLlBhcnR5\nQWRkcmVzc0RUTxk8X0uhxLShAgASWgAIaG9sZE1haWxaAAhzdG9wTWFpbEwAEGFjY29tbW9kYXRp\nb25EVE90ADFMY29tL29mc3MvZmMvYXBwL3BhcnR5L2R0by9jb3JlL0FjY29tbW9kYXRpb25EVE87\nTAANYWRkcmVzc0tleURUT3QAM0xjb20vb2Zzcy9mYy9hcHAvcGFydHkvZHRvL2NvcmUvUGFydHlB\nZGRyZXNzS2V5RFRPO0wADWFkZHJlc3NTdGF0dXN0AC1MY29tL29mc3MvZmMvZW51bWVyYXRpb24v\ncGFydHkvQWRkcmVzc1N0YXR1cztMAAhjaXR5TmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO0wAC2Nv\ndW50cnlOYW1lcQB+AAZMAAdlbmREYXRldAAbTGNvbS9vZnNzL2ZjL2RhdGF0eXBlL0RhdGU7TAAL\naG9sZEVuZERhdGVxAH4AB0wADWhvbGRTdGFydERhdGVxAH4AB0wAE2lzU2VsZWN0ZWRGb3JEZWxl\ndGV0ABNMamF2YS9sYW5nL0Jvb2xlYW47TAAIbmlja05hbWVxAH4ABkwADW9wZXJhdGlvblR5cGV0\nAClMY29tL29mc3MvZmMvZW51bWVyYXRpb24vTWFpbnRlbmFuY2VUeXBlO0wADXBvc3RhbEFkZHJl\nc3N0ACRMY29tL29mc3MvZmMvZGF0YXR5cGUvUG9zdGFsQWRkcmVzcztMAA9zZWFzb25hbEVuZERh\ndGVxAH4AB0wAEXNlYXNvbmFsU3RhcnREYXRlcQB+AAdMAAlzdGF0ZU5hbWVxAH4ABkwADnN0b3BN\nYWlsUmVhc29udAAvTGNvbS9vZnNzL2ZjL2VudW1lcmF0aW9uL3BhcnR5L1N0b3BNYWlsUmVhc29u\nczt4cgA3Y29tLm9mc3MuZmMuZnJhbWV3b3JrLmRvbWFpbi5jb21tb24uZHRvLkRvbWFpbk9iamVj\ndERUT0iL1MO/HAzXAgAKWgASZ2VuZXJhdGVkUGFja2FnZUlkTAANYXVkaXRTZXF1ZW5jZXQAE0xq\nYXZhL2xhbmcvSW50ZWdlcjtMAA9jb25maWdQYWNrYWdlSWRxAH4ABkwACWNyZWF0ZWRCeXEAfgAG\nTAAMY3JlYXRpb25EYXRlcQB+AAdMAAxlbnRpdHlTdGF0dXN0ACZMY29tL29mc3MvZmMvZW51bWVy\nYXRpb24vRW50aXR5U3RhdHVzO0wADWxhc3RVcGRhdGVkQnlxAH4ABkwAD2xhc3RVcGRhdGVkRGF0\nZXEAfgAHTAAMcmVjb3JkU3RhdHVzdAAqTGNvbS9vZnNzL2ZjL2VudW1lcmF0aW9uL1JlY29yZFN0\nYXR1c1R5cGU7TAAHdmVyc2lvbnEAfgANeHIAOmNvbS5vZnNzLmZjLmZyYW1ld29yay5kb21haW4u\nY29tbW9uLmR0by5EYXRhVHJhbnNmZXJPYmplY3SknbRBu5d6OgIAAVsAD2RpY3Rpb25hcnlBcnJh\neXQANVtMY29tL29mc3MvZmMvZnJhbWV3b3JrL2RvbWFpbi9jb21tb24vZHRvL0RpY3Rpb25hcnk7\neHB1cgA1W0xjb20ub2Zzcy5mYy5mcmFtZXdvcmsuZG9tYWluLmNvbW1vbi5kdG8uRGljdGlvbmFy\neTtLUhhrM1Fc6AIAAHhwAAAAAXNyADJjb20ub2Zzcy5mYy5mcmFtZXdvcmsuZG9tYWluLmNvbW1v\nbi5kdG8uRGljdGlvbmFyeQjkdfYYEhCjAgABWwAVbmFtZVZhbHVlUGFpckRUT0FycmF5dAA7W0xj\nb20vb2Zzcy9mYy9mcmFtZXdvcmsvZG9tYWluL2NvbW1vbi9kdG8vTmFtZVZhbHVlUGFpckRUTzt4\ncHVyADtbTGNvbS5vZnNzLmZjLmZyYW1ld29yay5kb21haW4uY29tbW9uLmR0by5OYW1lVmFsdWVQ\nYWlyRFRPO7hqK+zM9EArAgAAeHAAAAADc3IAOGNvbS5vZnNzLmZjLmZyYW1ld29yay5kb21haW4u\nY29tbW9uLmR0by5OYW1lVmFsdWVQYWlyRFRPVXx/wXqa2TICAARMAAhkYXRhdHlwZXEAfgAGTAAL\nZ2VuZXJpY05hbWVxAH4ABkwABG5hbWVxAH4ABkwABXZhbHVlcQB+AAZ4cHB0AAxBZGRyT2NoUm93\nSWRwdAAIMS1FWk9ZUDFzcQB+ABpwdAAMSXNPQlBBZGRyZXNzcHQAAVlzcQB+ABpwdAAJQWRkclNl\ncU5vcHQAFDAwMV9NRV8xMDAwMTYyMTE5MDIzAHNyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4\nAgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAABcHBwcHBwcHEA\nfgAmAABzcgAvY29tLm9mc3MuZmMuYXBwLnBhcnR5LmR0by5jb3JlLkFjY29tbW9kYXRpb25EVE8h\nZkMqCG8pSwIAB0wAFGFjY29tbW9kYXRpb25UeXBlRFRPdAA1TGNvbS9vZnNzL2ZjL2FwcC9wYXJ0\neS9kdG8vY29yZS9BY2NvbW1vZGF0aW9uVHlwZURUTztMABBjb250YWN0UGVyc29uRFRPdAA0TGNv\nbS9vZnNzL2ZjL2FwcC9wYXJ0eS9kdG8vY29udGFjdC9Db250YWN0UGVyc29uRFRPO0wAB2VtYWls\nSWRxAH4ABkwAD2xhbmRsb3JkQWRkcmVzc3EAfgAKTAAMbGFuZGxvcmROYW1lcQB+AAZMABNsYW5k\nbG9yZFBob25lTnVtYmVycQB+AAZMAAtsaXZpbmdTaW5jZXEAfgAGeHEAfgAQcHNyADNjb20ub2Zz\ncy5mYy5hcHAucGFydHkuZHRvLmNvcmUuQWNjb21tb2RhdGlvblR5cGVEVE8mJZXPRVC7uQIABEwA\nC2Rlc2NyaXB0aW9ucQB+AAZMAAJpZHEAfgAGTAAEbmFtZXEAfgAGTAAJcGFydHlUeXBldAApTGNv\nbS9vZnNzL2ZjL2VudW1lcmF0aW9uL3BhcnR5L1BhcnR5VHlwZTt4cQB+ABBwcHQAA09XTnBwcHBw\ncHB0AAgxOTk1MDUwNXNyADFjb20ub2Zzcy5mYy5hcHAucGFydHkuZHRvLmNvcmUuUGFydHlBZGRy\nZXNzS2V5RFRPy7lEYs/+nlsCAARMAAthZGRyZXNzVHlwZXQAK0xjb20vb2Zzcy9mYy9lbnVtZXJh\ndGlvbi9wYXJ0eS9BZGRyZXNzVHlwZTtMAA1lZmZlY3RpdmVEYXRlcQB+AAdMAAxsYW5ndWFnZUNv\nZGVxAH4ABkwAB3BhcnR5SWRxAH4ABnhwfnIAKWNvbS5vZnNzLmZjLmVudW1lcmF0aW9uLnBhcnR5\nLkFkZHJlc3NUeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAE\nSG9tZXNyABljb20ub2Zzcy5mYy5kYXRhdHlwZS5EYXRlnKHuSZLdAz4CAAFMAAtkYXRlQWRhcHRl\ncnQAI0xjb20vb2Zzcy9mYy9kYXRhdHlwZS9JRGF0ZUFkYXB0ZXI7eHBzcgAxY29tLm9mc3MuZmMu\nZGF0YXR5cGUuYWRhcHRlci5qb2RhLkpvZGFEYXRlQWRhcHRlcpORu3+UkGXsAgABTAAMam9kYURh\ndGVUaW1ldAAYTG9yZy9qb2RhL3RpbWUvRGF0ZVRpbWU7eHBzcgAWb3JnLmpvZGEudGltZS5EYXRl\nVGltZbg8eGRqW935AgAAeHIAH29yZy5qb2RhLnRpbWUuYmFzZS5CYXNlRGF0ZVRpbWX///nhT10u\nowIAAkoAB2lNaWxsaXNMAAtpQ2hyb25vbG9neXQAGkxvcmcvam9kYS90aW1lL0Nocm9ub2xvZ3k7\neHAAAAC6LJnkQHNyACdvcmcuam9kYS50aW1lLmNocm9uby5JU09DaHJvbm9sb2d5JFN0dWKpyBFm\ncTdQJwMAAHhwc3IAH29yZy5qb2RhLnRpbWUuRGF0ZVRpbWVab25lJFN0dWKmLwGafDIa4wMAAHhw\ndwgABiswNTozMHh4dAACRU50AAkxMjEzMzQ4MjF+cgArY29tLm9mc3MuZmMuZW51bWVyYXRpb24u\ncGFydHkuQWRkcmVzc1N0YXR1cwAAAAAAAAAAEgAAeHEAfgA0dAAHQ1VSUkVOVHBwcHBwc3IAEWph\ndmEubGFuZy5Cb29sZWFuzSBygNWc+u4CAAFaAAV2YWx1ZXhwAHBwc3IAImNvbS5vZnNzLmZjLmRh\ndGF0eXBlLlBvc3RhbEFkZHJlc3MAAAAAAAAAAQIAEEwABGNpdHlxAH4ABkwAB2NvdW50cnlxAH4A\nBkwABWxpbmUxcQB+AAZMAAZsaW5lMTBxAH4ABkwABmxpbmUxMXEAfgAGTAAGbGluZTEycQB+AAZM\nAAVsaW5lMnEAfgAGTAAFbGluZTNxAH4ABkwABWxpbmU0cQB+AAZMAAVsaW5lNXEAfgAGTAAFbGlu\nZTZxAH4ABkwABWxpbmU3cQB+AAZMAAVsaW5lOHEAfgAGTAAFbGluZTlxAH4ABkwACnBvc3RhbENv\nZGVxAH4ABkwABXN0YXRlcQB+AAZ4cHQAC0FVQlVSTiBWQUxFdAACQVV0AAB0AAB0AAB0AAB0AAB0\nAAB0AAtBdWJ1cm4gUGFya3QAAHQAAzk1MHQAC0F1YnVybiBWYWxldAACUkR0AAB0AAQyMzYwdAAD\nTlNXcHBwcHNxAH4AAnVxAH4AEwAAAAFzcQB+ABV1cQB+ABgAAAADc3EAfgAacHQADEFkZHJPY2hS\nb3dJZHB0AAgxLUVaT1lQMnNxAH4AGnBxAH4AH3BxAH4AIHNxAH4AGnB0AAlBZGRyU2VxTm9wdAAU\nMDAyX01FXzEwMDAxNjIxMTkwMjMAcQB+ACZwcHBwcHBwcQB+ACYAAHNxAH4AJ3BzcQB+ACtwcHQA\nA0lVRHBwcHBwcHB0AAgxOTk1MDUwNXNxAH4AMH5xAH4AM3QADUNvbW11bmljYXRpb25zcQB+ADdz\ncQB+ADpzcQB+AD0AAAC6LJnkQHEAfgBCdAACRU50AAkxMjEzMzQ4MjFxAH4ASHBwcHBwcQB+AEtw\ncHNxAH4ATHQAC0FVQlVSTiBWQUxFdAACQVV0AAB0AAB0AAB0AAB0AAB0AAB0AAtBdWJ1cm4gUGFy\na3QAAHQAAzk1MHQAC0F1YnVybiBWYWxldAACUkR0AAB0AAQyMzYwdAADTlNXcHBwcA==",
+                      "FactName": "PartyOCHAddressDTOs"
+                    },
+                    {
+                      "FactValue": "true",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.PerfElecKYCConsent"
+                    },
+                    {
+                      "FactValue": "20171010000000",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OccdPerformedDate"
+                    },
+                    {
+                      "FactValue": "false",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OtherCountryResident"
+                    },
+                    {
+                      "FactValue": "20170821120000",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertFirstObtndDate"
+                    },
+                    {
+                      "FactValue": "OBP",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertLastUpdtdChnl"
+                    },
+                    {
+                      "FactValue": "Assisted",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertMethod"
+                    },
+                    {
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.HasPassiveIncome"
+                    },
+                    {
+                      "FactValue": "20171106000000",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertLastUpdtdDate"
+                    },
+                    {
+                      "FactName": "OverseasTaxDetailsGrid"
+                    },
+                    {
+                      "FactValue": "OBP",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OcddPerformedChannel"
+                    },
+                    {
+                      "FactValue": "PARIJATP",
+                      "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OcddPerformedBy"
+                    }
+                  ]
+                ],
+                "isDedupCheckOverridden": "true",
+                "EmploymentHistoryDTO": {
+                  "KeyDTO": {
+                    "_type": "com.ofss.fc.app.party.dto.individual.EmploymentHistoryKeyDTO",
+                    "partyId": "121334821"
+                  },
+                  "DictionaryArray": [
+                    
+                  ],
+                  "EntityStatus": "A",
+                  "CreationDate": "20170908115907",
+                  "generatedPackageId": "false",
+                  "LastUpdatedDate": "20171102151249",
+                  "TotalExperience": {
+                    "_type": "com.ofss.fc.datatype.Duration",
+                    "months": "6",
+                    "days": "1",
+                    "years": "16"
+                  },
+                  "version": "17",
+                  "auditSequence": "1",
+                  "_type": "com.ofss.fc.app.party.dto.individual.EmploymentHistoryDTO",
+                  "staff": "false",
+                  "createdBy": "anshumana",
+                  "EmploymentProfile": [
+                    {
+                      "isPrimary": "true",
+                      "KeyDTO": {
+                        "_type": "com.ofss.fc.app.party.dto.individual.EmploymentProfileKeyDTO",
+                        "partyId": "121334821",
+                        "profileId": "1"
+                      },
+                      "DictionaryArray": [
+                        
+                      ],
+                      "ContactPerson": [
+                        {
+                          "_type": "com.ofss.fc.app.party.dto.individual.EmployeeContactPersonDTO",
+                          "DictionaryArray": [
+                            
+                          ]
+                        }
+                      ],
+                      "profession": "O599113",
+                      "EmployeeEmail": {
+                        "auditSequence": "1",
+                        "isDnd": "false",
+                        "isPreferred": "false",
+                        "_type": "com.ofss.fc.app.party.dto.contact.ElectronicAddressDTO",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "markedForDeletion": "false",
+                        "isIM": "false",
+                        "isMarketingConsent": "false",
+                        "generatedPackageId": "false",
+                        "isSocialNetworkingProfile": "false",
+                        "version": "1"
+                      },
+                      "EmploymentStatus": "FTM",
+                      "PhoneNumber": {
+                        "auditSequence": "1",
+                        "isDnd": "false",
+                        "isPreferred": "false",
+                        "_type": "com.ofss.fc.app.party.dto.contact.TelephoneDTO",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "markedForDeletion": "false",
+                        "isMarketingConsent": "false",
+                        "generatedPackageId": "false",
+                        "version": "1"
+                      },
+                      "EmploymentType": "SAL",
+                      "_type": "com.ofss.fc.app.party.dto.individual.EmploymentProfileDTO",
+                      "employerName": "djfcjfcjgfc",
+                      "EmployeeLandline": {
+                        "auditSequence": "1",
+                        "isDnd": "false",
+                        "isPreferred": "false",
+                        "_type": "com.ofss.fc.app.party.dto.contact.TelephoneDTO",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "markedForDeletion": "false",
+                        "isMarketingConsent": "false",
+                        "generatedPackageId": "false",
+                        "version": "1"
+                      },
+                      "fromDate": "20010505000000",
+                      "grossIncome": "0",
+                      "Verification": {
+                        "_type": "com.ofss.fc.app.party.dto.contact.VerificationDTO",
+                        "DictionaryArray": [
+                          
+                        ]
+                      },
+                      "ProfileStatus": "Current",
+                      "industry": "30"
+                    }
+                  ],
+                  "lastUpdatedBy": "X007014"
+                },
+                "IndividualDTO": {
+                  "DictionaryArray": [
+                    [
+                      {
+                        "FactValue": "false",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.IsNonResident"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.Salutation"
+                      },
+                      {
+                        "FactValue": "false",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OtherCountryResident"
+                      },
+                      {
+                        "FactValue": "20171010000000",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OccdPerformedDate"
+                      },
+                      {
+                        "FactValue": "PARIJATP",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OcddPerformedBy"
+                      },
+                      {
+                        "FactValue": "OBP",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OcddPerformedChannel"
+                      },
+                      {
+                        "FactValue": "20170821120000",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertFirstObtndDate"
+                      },
+                      {
+                        "FactValue": "OBP",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertLastUpdtdChnl"
+                      },
+                      {
+                        "FactValue": "20171010000000",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertLastUpdtdDate"
+                      },
+                      {
+                        "FactValue": "Assisted",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertMethod"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CompanySeal"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.DeviceSessionData"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.DeviceOrgID"
+                      },
+                      {
+                        "FactValue": "743068361",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.BUID"
+                      },
+                      {
+                        "FactValue": "POST",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.OfferDeliveryChannel"
+                      },
+                      {
+                        "FactValue": "true",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.PerfElecKYCConsent"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.HasPassiveIncome"
+                      },
+                      {
+                        "FactValue": "X007014",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.CrsSelfCertLastUpdtdBy"
+                      },
+                      {
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.IsCRSinvestmentEntity"
+                      },
+                      {
+                        "FactValue": "121334821",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.DomainObjectKey"
+                      },
+                      {
+                        "FactValue": "121334821",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.DomainObjectKey"
+                      },
+                      {
+                        "FactValue": "121334821",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.Id"
+                      },
+                      {
+                        "FactValue": "false",
+                        "FactName": "com.ofss.fc.cz.nab.domain.party.entity.core.CustomizedParty.IsIntroMarginEligible"
+                      }
+                    ]
+                  ],
+                  "version": "26",
+                  "auditSequence": "1",
+                  "_type": "com.ofss.fc.app.party.dto.individual.IndividualDTO",
+                  "emailId": "user521414230826801@gmail.com",
+                  "cguid": "1000162119023",
+                  "IndividualDemographicsDTO": {
+                    "PartyDemographicsKeyDTO": {
+                      "_type": "com.ofss.fc.app.party.dto.core.PartyDemographicsKeyDTO",
+                      "PartyType": "IND",
+                      "partyId": "121334821"
+                    },
+                    "DictionaryArray": [
+                      
+                    ],
+                    "InformationSource": [
+                      {
+                        "_type": "com.ofss.fc.app.party.dto.core.InformationSourceDTO",
+                        "KeyDTO": {
+                          "InformationSourceTypeDTO": {
+                            "id": "OTHER",
+                            "_type": "com.ofss.fc.app.party.dto.global.InformationSourceTypeDTO",
+                            "DictionaryArray": [
+                              
+                            ],
+                            "description": "Other",
+                            "name": "Other"
+                          },
+                          "_type": "com.ofss.fc.app.party.dto.core.InformationSourceKeyDTO",
+                          "partyId": "121334821",
+                          "serialNumber": "1"
+                        },
+                        "DictionaryArray": [
+                          
+                        ]
+                      }
+                    ],
+                    "LanguageDTO": {
+                      "_type": "com.ofss.fc.app.party.dto.contact.LanguageDTO",
+                      "DictionaryArray": [
+                        
+                      ]
+                    },
+                    "legalMajor": "true",
+                    "version": "26",
+                    "isPrivacyOptout": "false",
+                    "operationalMajor": "false",
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.party.dto.individual.IndividualDemographicsDTO",
+                    "emailId": "user521414230826801@gmail.com",
+                    "IndividualNameDTOs": [
+                      {
+                        "lastName": "mlHwYFCfTK",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "EntityStatus": "A",
+                        "generatedPackageId": "false",
+                        "prefixPrimary": "87",
+                        "CreationDate": "20170904120213",
+                        "LastUpdatedDate": "20171102151248",
+                        "version": "26",
+                        "auditSequence": "1",
+                        "_type": "com.ofss.fc.app.party.dto.individual.IndividualNameDTO",
+                        "createdBy": "anshumana",
+                        "PartyNameKeyDTO": {
+                          "_type": "com.ofss.fc.app.party.dto.identity.PartyNameKeyDTO",
+                          "PartyNameType": "PRF",
+                          "partyId": "121334821"
+                        },
+                        "lastUpdatedBy": "X007014",
+                        "fullName": "nmjHadvmPe XPPPPPPPP mlHwYFCfTK",
+                        "toBeDeleted": "false",
+                        "firstName": "nmjHadvmPe",
+                        "middleNameFirst": "XPPPPPPPP"
+                      },
+                      {
+                        "lastName": "MLHWYFCFTK",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "EntityStatus": "A",
+                        "generatedPackageId": "false",
+                        "prefixPrimary": "87",
+                        "CreationDate": "20170904120213",
+                        "LastUpdatedDate": "20171102151248",
+                        "version": "26",
+                        "auditSequence": "1",
+                        "_type": "com.ofss.fc.app.party.dto.individual.IndividualNameDTO",
+                        "createdBy": "anshumana",
+                        "PartyNameKeyDTO": {
+                          "_type": "com.ofss.fc.app.party.dto.identity.PartyNameKeyDTO",
+                          "PartyNameType": "LEG",
+                          "partyId": "121334821"
+                        },
+                        "lastUpdatedBy": "X007014",
+                        "fullName": "NMJHADVMPE XPPPPPPPP MLHWYFCFTK",
+                        "toBeDeleted": "false",
+                        "firstName": "NMJHADVMPE",
+                        "middleNameFirst": "XPPPPPPPP"
+                      }
+                    ],
+                    "inCollections": "false",
+                    "isBankrupt": "false",
+                    "age": "0",
+                    "birthDate": "19740708000000",
+                    "MaritalStatus": "SIN",
+                    "LandlineNumber": {
+                      "_type": "com.ofss.fc.datatype.Phone",
+                      "number": "0252409738"
+                    },
+                    "MobileNumber": {
+                      "_type": "com.ofss.fc.datatype.Phone",
+                      "number": "0473022223"
+                    },
+                    "unwillingToDiscloseDetails": "true",
+                    "financialHardship": "false",
+                    "occupation": "O399911",
+                    "ApplicantMarketingConsent": {
+                      "isSMSNotificationsAllowed": "true",
+                      "isEmailNotificationsAllowed": "true",
+                      "_type": "com.ofss.fc.app.party.dto.core.MarketingConsentDTO",
+                      "isCallNotificationsAllowed": "true",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "isPostalNotificationsAllowed": "true",
+                      "isSendInformationAllowed": "true",
+                      "InformationSource": [
+                        {
+                          "_type": "com.ofss.fc.app.party.dto.core.InformationSourceDTO",
+                          "KeyDTO": {
+                            "InformationSourceTypeDTO": {
+                              "id": "OTHER",
+                              "_type": "com.ofss.fc.app.party.dto.global.InformationSourceTypeDTO",
+                              "DictionaryArray": [
+                                
+                              ]
+                            },
+                            "_type": "com.ofss.fc.app.party.dto.core.InformationSourceKeyDTO",
+                            "serialNumber": "0"
+                          },
+                          "DictionaryArray": [
+                            
+                          ]
+                        }
+                      ]
+                    },
+                    "EntityStatus": "A",
+                    "numberOfDependents": "0",
+                    "isBankEmployee": "false",
+                    "IncomeCategoryDTO": {
+                      "id": "2",
+                      "_type": "com.ofss.fc.app.party.dto.global.IncomeCategoryDTO",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "upperLimit": "75000",
+                      "lowerLimit": "50001",
+                      "incomeLevel": "LOW-HIGH"
+                    },
+                    "generatedPackageId": "false",
+                    "CreationDate": "20170904120213",
+                    "areWhereAboutsUnknown": "false",
+                    "LastUpdatedDate": "20171102151248",
+                    "shareInformationIndicator": "false",
+                    "industryType": "30",
+                    "isShareHolderOfBank": "false",
+                    "createdBy": "anshumana",
+                    "FatcaDetailsDTO": {
+                      "auditSequence": "1",
+                      "_type": "com.ofss.fc.app.party.dto.core.fatca.FatcaDetailsDTO",
+                      "DictionaryArray": [
+                        [
+                          {
+                            "FactValue": "false",
+                            "FactName": "com.ofss.fc.cz.nab.domain.party.entity.fatcadata.CustomizedFatcaDetails.UsResident"
+                          },
+                          {
+                            "FactName": "com.ofss.fc.cz.nab.domain.party.entity.fatcadata.CustomizedFatcaDetails.FatcaStatus"
+                          },
+                          {
+                            "FactName": "com.ofss.fc.cz.nab.domain.party.entity.fatcadata.CustomizedFatcaDetails.FatcaStatusOtherReason"
+                          },
+                          {
+                            "FactName": "com.ofss.fc.cz.nab.domain.party.entity.fatcadata.CustomizedFatcaDetails.HasPassiveIncomeUSPerson"
+                          },
+                          {
+                            "FactName": "com.ofss.fc.cz.nab.domain.party.entity.fatcadata.CustomizedFatcaDetails.IsFatcaFinancialInstitute"
+                          }
+                        ]
+                      ],
+                      "createdBy": "anshumana",
+                      "lastUpdatedBy": "X007014",
+                      "generatedPackageId": "false",
+                      "CreationDate": "20170904120213",
+                      "LastUpdatedDate": "20171102151248",
+                      "DomainObjectKeyDTO": {
+                        "_type": "com.ofss.fc.app.party.dto.core.fatca.FatcaDetailsKeyDTO",
+                        "partyId": "121334821"
+                      },
+                      "version": "26"
+                    },
+                    "lastUpdatedBy": "X007014",
+                    "Gender": "MAL",
+                    "numberOfSharesHeld": "0",
+                    "branchName": "NAB Operations Dummy BR",
+                    "isCustomerDelinquent": "false",
+                    "branch": "089998",
+                    "PhysicalStatusDTO": {
+                      "isDisabled": "false",
+                      "heightInCentimetres": "0",
+                      "_type": "com.ofss.fc.app.party.dto.individual.PhysicalStatusDTO",
+                      "weight": "0",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "smokingIndicator": "false"
+                    },
+                    "isNonResident": "false"
+                  },
+                  "EmploymentHistoryDTO": {
+                    "KeyDTO": {
+                      "_type": "com.ofss.fc.app.party.dto.individual.EmploymentHistoryKeyDTO",
+                      "partyId": "121334821"
+                    },
+                    "DictionaryArray": [
+                      
+                    ],
+                    "EntityStatus": "A",
+                    "CreationDate": "20170908115907",
+                    "generatedPackageId": "false",
+                    "LastUpdatedDate": "20171102151249",
+                    "TotalExperience": {
+                      "_type": "com.ofss.fc.datatype.Duration",
+                      "months": "6",
+                      "days": "1",
+                      "years": "16"
+                    },
+                    "version": "17",
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.party.dto.individual.EmploymentHistoryDTO",
+                    "staff": "false",
+                    "createdBy": "anshumana",
+                    "EmploymentProfile": [
+                      {
+                        "isPrimary": "true",
+                        "KeyDTO": {
+                          "_type": "com.ofss.fc.app.party.dto.individual.EmploymentProfileKeyDTO",
+                          "partyId": "121334821",
+                          "profileId": "1"
+                        },
+                        "DictionaryArray": [
+                          
+                        ],
+                        "ContactPerson": [
+                          {
+                            "_type": "com.ofss.fc.app.party.dto.individual.EmployeeContactPersonDTO",
+                            "DictionaryArray": [
+                              
+                            ]
+                          }
+                        ],
+                        "profession": "O599113",
+                        "EmployeeEmail": {
+                          "auditSequence": "1",
+                          "isDnd": "false",
+                          "isPreferred": "false",
+                          "_type": "com.ofss.fc.app.party.dto.contact.ElectronicAddressDTO",
+                          "DictionaryArray": [
+                            
+                          ],
+                          "markedForDeletion": "false",
+                          "isIM": "false",
+                          "isMarketingConsent": "false",
+                          "generatedPackageId": "false",
+                          "isSocialNetworkingProfile": "false",
+                          "version": "1"
+                        },
+                        "EmploymentStatus": "FTM",
+                        "PhoneNumber": {
+                          "auditSequence": "1",
+                          "isDnd": "false",
+                          "isPreferred": "false",
+                          "_type": "com.ofss.fc.app.party.dto.contact.TelephoneDTO",
+                          "DictionaryArray": [
+                            
+                          ],
+                          "markedForDeletion": "false",
+                          "isMarketingConsent": "false",
+                          "generatedPackageId": "false",
+                          "version": "1"
+                        },
+                        "EmploymentType": "SAL",
+                        "_type": "com.ofss.fc.app.party.dto.individual.EmploymentProfileDTO",
+                        "employerName": "djfcjfcjgfc",
+                        "EmployeeLandline": {
+                          "auditSequence": "1",
+                          "isDnd": "false",
+                          "isPreferred": "false",
+                          "_type": "com.ofss.fc.app.party.dto.contact.TelephoneDTO",
+                          "DictionaryArray": [
+                            
+                          ],
+                          "markedForDeletion": "false",
+                          "isMarketingConsent": "false",
+                          "generatedPackageId": "false",
+                          "version": "1"
+                        },
+                        "fromDate": "20010505000000",
+                        "grossIncome": "0",
+                        "Verification": {
+                          "_type": "com.ofss.fc.app.party.dto.contact.VerificationDTO",
+                          "DictionaryArray": [
+                            
+                          ]
+                        },
+                        "ProfileStatus": "Current",
+                        "industry": "30"
+                      }
+                    ],
+                    "lastUpdatedBy": "X007014"
+                  },
+                  "onBoardingChannel": "BRN",
+                  "LandlineNumber": {
+                    "_type": "com.ofss.fc.datatype.Phone",
+                    "number": "0252409738"
+                  },
+                  "MobileNumber": {
+                    "_type": "com.ofss.fc.datatype.Phone",
+                    "number": "0473022223"
+                  },
+                  "PartyAddressDTOs": [
+                    {
+                      "auditSequence": "1",
+                      "holdMail": "false",
+                      "_type": "com.ofss.fc.app.party.dto.core.PartyAddressDTO",
+                      "stopMail": "false",
+                      "AddressKeyDTO": {
+                        "_type": "com.ofss.fc.app.party.dto.core.PartyAddressKeyDTO",
+                        "languageCode": "EN",
+                        "partyId": "121334821",
+                        "EffectiveDate": "19950505000000",
+                        "AddressType": "HOM"
+                      },
+                      "DictionaryArray": [
+                        [
+                          {
+                            "FactValue": "1-EZOYP1",
+                            "FactName": "AddrOchRowId"
+                          },
+                          {
+                            "FactValue": "Y",
+                            "FactName": "IsOBPAddress"
+                          },
+                          {
+                            "FactValue": "001_ME_1000162119023",
+                            "FactName": "AddrSeqNo"
+                          }
+                        ]
+                      ],
+                      "AccommodationDTO": {
+                        "AccommodationTypeDTO": {
+                          "id": "OWN",
+                          "_type": "com.ofss.fc.app.party.dto.core.AccommodationTypeDTO",
+                          "DictionaryArray": [
+                            
+                          ]
+                        },
+                        "_type": "com.ofss.fc.app.party.dto.core.AccommodationDTO",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "livingSince": "19950505"
+                      },
+                      "AddressStatus": "CURRENT",
+                      "isSelectedForDelete": "false",
+                      "generatedPackageId": "false",
+                      "PostalAddress": {
+                        "line8": "RD",
+                        "line9": "",
+                        "line6": "950",
+                        "line7": "Auburn Vale",
+                        "line4": "Auburn Park",
+                        "line5": "",
+                        "state": "NSW",
+                        "country": "AU",
+                        "city": "AUBURN VALE",
+                        "_type": "com.ofss.fc.datatype.PostalAddress",
+                        "postalCode": "2360",
+                        "line10": "",
+                        "line1": "",
+                        "line11": "",
+                        "line12": "",
+                        "line3": "",
+                        "line2": ""
+                      },
+                      "version": "1"
+                    },
+                    {
+                      "auditSequence": "1",
+                      "holdMail": "false",
+                      "_type": "com.ofss.fc.app.party.dto.core.PartyAddressDTO",
+                      "stopMail": "false",
+                      "AddressKeyDTO": {
+                        "_type": "com.ofss.fc.app.party.dto.core.PartyAddressKeyDTO",
+                        "languageCode": "EN",
+                        "partyId": "121334821",
+                        "EffectiveDate": "19950505000000",
+                        "AddressType": "COM"
+                      },
+                      "DictionaryArray": [
+                        [
+                          {
+                            "FactValue": "1-EZOYP2",
+                            "FactName": "AddrOchRowId"
+                          },
+                          {
+                            "FactValue": "Y",
+                            "FactName": "IsOBPAddress"
+                          },
+                          {
+                            "FactValue": "002_ME_1000162119023",
+                            "FactName": "AddrSeqNo"
+                          }
+                        ]
+                      ],
+                      "AccommodationDTO": {
+                        "AccommodationTypeDTO": {
+                          "id": "IUD",
+                          "_type": "com.ofss.fc.app.party.dto.core.AccommodationTypeDTO",
+                          "DictionaryArray": [
+                            
+                          ]
+                        },
+                        "_type": "com.ofss.fc.app.party.dto.core.AccommodationDTO",
+                        "DictionaryArray": [
+                          
+                        ],
+                        "livingSince": "19950505"
+                      },
+                      "AddressStatus": "CURRENT",
+                      "isSelectedForDelete": "false",
+                      "generatedPackageId": "false",
+                      "PostalAddress": {
+                        "line8": "RD",
+                        "line9": "",
+                        "line6": "950",
+                        "line7": "Auburn Vale",
+                        "line4": "Auburn Park",
+                        "line5": "",
+                        "state": "NSW",
+                        "country": "AU",
+                        "city": "AUBURN VALE",
+                        "_type": "com.ofss.fc.datatype.PostalAddress",
+                        "postalCode": "2360",
+                        "line10": "",
+                        "line1": "",
+                        "line11": "",
+                        "line12": "",
+                        "line3": "",
+                        "line2": ""
+                      },
+                      "version": "1"
+                    }
+                  ],
+                  "PartyType": "IND",
+                  "occupationType": "O399911",
+                  "IdentificationDTOs": [
+                    
+                  ],
+                  "EntityStatus": "A",
+                  "generatedPackageId": "false",
+                  "CreationDate": "20170904120213",
+                  "onBoardingdate": "20170821000000",
+                  "LastUpdatedDate": "20171102151248",
+                  "blacklisted": "false",
+                  "ContactDetails": [
+                    {
+                      "isPreferred": "false",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "EntityStatus": "A",
+                      "generatedPackageId": "false",
+                      "CreationDate": "19500101000000",
+                      "oldValue": "0252409738",
+                      "number": "0252409738",
+                      "LastUpdatedDate": "20171102151248",
+                      "preferenceTypeStr": "FLH",
+                      "version": "26",
+                      "ContactPoint": "FLL",
+                      "auditSequence": "1",
+                      "isDnd": "false",
+                      "_type": "com.ofss.fc.app.party.dto.contact.ContactPointDTO",
+                      "AllowedPurposes": [
+                        {
+                          "ObjInputVal": "ALERT"
+                        },
+                        {
+                          "ObjInputVal": "COMM"
+                        }
+                      ],
+                      "createdBy": "anshumana",
+                      "partyId": "121334821",
+                      "markedForDeletion": "false",
+                      "TimingPreferences": [
+                        null,
+                        null
+                      ],
+                      "lastUpdatedBy": "X007014",
+                      "isMarketingConsent": "false",
+                      "TelephoneType": "FIX",
+                      "toBeDeleted": "false"
+                    },
+                    {
+                      "auditSequence": "1",
+                      "isDnd": "false",
+                      "isPreferred": "false",
+                      "_type": "com.ofss.fc.app.party.dto.contact.ContactPointDTO",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "partyId": "121334821",
+                      "markedForDeletion": "false",
+                      "isMarketingConsent": "false",
+                      "generatedPackageId": "false",
+                      "toBeDeleted": "true",
+                      "preferenceTypeStr": "FLW",
+                      "version": "1",
+                      "ContactPoint": "FLL"
+                    },
+                    {
+                      "isPreferred": "true",
+                      "preferredForAlertSMS": "true",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "EntityStatus": "A",
+                      "generatedPackageId": "false",
+                      "CreationDate": "19500101000000",
+                      "oldValue": "0473022223",
+                      "number": "0473022223",
+                      "LastUpdatedDate": "20171102151248",
+                      "preferenceTypeStr": "PSL",
+                      "version": "26",
+                      "ContactPoint": "CLR",
+                      "auditSequence": "1",
+                      "isDnd": "false",
+                      "_type": "com.ofss.fc.app.party.dto.contact.ContactPointDTO",
+                      "AllowedPurposes": [
+                        {
+                          "ObjInputVal": "ALERT"
+                        },
+                        {
+                          "ObjInputVal": "COMM"
+                        }
+                      ],
+                      "createdBy": "anshumana",
+                      "partyId": "121334821",
+                      "markedForDeletion": "false",
+                      "TimingPreferences": [
+                        null,
+                        null
+                      ],
+                      "lastUpdatedBy": "X007014",
+                      "userId": "0473022223",
+                      "isMarketingConsent": "false",
+                      "TelephoneType": "CEL",
+                      "toBeDeleted": "false"
+                    },
+                    {
+                      "isPreferred": "false",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "generatedPackageId": "false",
+                      "preferenceTypeStr": "OTH",
+                      "ContactPoint": "TPN",
+                      "version": "1",
+                      "auditSequence": "1",
+                      "isDnd": "false",
+                      "_type": "com.ofss.fc.app.party.dto.contact.ContactPointDTO",
+                      "partyId": "121334821",
+                      "markedForDeletion": "false",
+                      "isMarketingConsent": "false",
+                      "TelephoneType": "ISD",
+                      "toBeDeleted": "true"
+                    },
+                    {
+                      "isPreferred": "true",
+                      "DictionaryArray": [
+                        
+                      ],
+                      "EntityStatus": "A",
+                      "generatedPackageId": "false",
+                      "CreationDate": "19500101000000",
+                      "oldValue": "user521414230826801@gmail.com",
+                      "LastUpdatedDate": "20171102151248",
+                      "preferenceTypeStr": "PSL",
+                      "version": "26",
+                      "ContactPoint": "ELA",
+                      "auditSequence": "1",
+                      "isDnd": "false",
+                      "_type": "com.ofss.fc.app.party.dto.contact.ContactPointDTO",
+                      "AllowedPurposes": [
+                        {
+                          "ObjInputVal": "ALERT"
+                        },
+                        {
+                          "ObjInputVal": "COMM"
+                        }
+                      ],
+                      "createdBy": "anshumana",
+                      "partyId": "121334821",
+                      "TimingPreferences": [
+                        null,
+                        null
+                      ],
+                      "markedForDeletion": "false",
+                      "lastUpdatedBy": "X007014",
+                      "userId": "user521414230826801@gmail.com",
+                      "isMarketingConsent": "false",
+                      "toBeDeleted": "false"
+                    }
+                  ],
+                  "industryType": "30",
+                  "createdBy": "anshumana",
+                  "PartyKeyDTO": {
+                    "_type": "com.ofss.fc.app.party.dto.core.PartyKeyDTO",
+                    "partyId": "121334821"
+                  },
+                  "IndividualNameDTO": {
+                    "lastName": "MLHWYFCFTK",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "EntityStatus": "A",
+                    "generatedPackageId": "false",
+                    "prefixPrimary": "87",
+                    "CreationDate": "20170904120213",
+                    "LastUpdatedDate": "20171102151248",
+                    "version": "26",
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.party.dto.individual.IndividualNameDTO",
+                    "createdBy": "anshumana",
+                    "PartyNameKeyDTO": {
+                      "_type": "com.ofss.fc.app.party.dto.identity.PartyNameKeyDTO",
+                      "PartyNameType": "LEG",
+                      "partyId": "121334821"
+                    },
+                    "lastUpdatedBy": "X007014",
+                    "fullName": "NMJHADVMPE XPPPPPPPP MLHWYFCFTK",
+                    "toBeDeleted": "false",
+                    "firstName": "NMJHADVMPE",
+                    "middleNameFirst": "XPPPPPPPP"
+                  },
+                  "partyClass": "1",
+                  "lastUpdatedBy": "X007014",
+                  "RoleDTO": [
+                    {
+                      "DictionaryArray": [
+                        
+                      ],
+                      "EntityStatus": "A",
+                      "CreationDate": "20170904120213",
+                      "generatedPackageId": "false",
+                      "LastUpdatedDate": "20171102151249",
+                      "version": "20",
+                      "auditSequence": "1",
+                      "_type": "com.ofss.fc.app.party.dto.role.CustomerRoleDTO",
+                      "createdBy": "anshumana",
+                      "partyId": "121334821",
+                      "description": "Customer",
+                      "lastUpdatedBy": "X007014",
+                      "effectiveDate": "20171010000000",
+                      "roleId": "2"
+                    },
+                    {
+                      "DictionaryArray": [
+                        
+                      ],
+                      "EntityStatus": "A",
+                      "CreationDate": "20170912173739",
+                      "generatedPackageId": "false",
+                      "LastUpdatedDate": "20171102151249",
+                      "version": "8",
+                      "auditSequence": "1",
+                      "_type": "com.ofss.fc.app.party.dto.role.GuarantorDTO",
+                      "createdBy": "ANIRBANS",
+                      "partyId": "121334821",
+                      "description": "Guarantor",
+                      "lastUpdatedBy": "X007014",
+                      "effectiveDate": "20170905000000",
+                      "roleId": "3"
+                    }
+                  ]
+                },
+                "generatedPackageId": "false",
+                "isSDNCheckOverridden": "false",
+                "isKYCCheckOverridden": "true",
+                "KycHistoryDTO": {
+                  "ManualKYCDetails": {
+                    "_type": "com.ofss.fc.app.party.dto.core.KYCDetailsDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "KycStatus": "NAP",
+                    "KycProcessStage": "NAP"
+                  },
+                  "KycExpiryDate": "20990101000000",
+                  "Condition": "Or",
+                  "Key": {
+                    "_type": "com.ofss.fc.app.party.dto.core.KYCHistoryKeyDTO",
+                    "partyId": "121334821",
+                    "serialNumber": "1"
+                  },
+                  "DictionaryArray": [
+                    
+                  ],
+                  "AutomaticKYCDetails": {
+                    "_type": "com.ofss.fc.app.party.dto.core.KYCDetailsDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "KycStatus": "CNF",
+                    "KycProcessStage": "CMP",
+                    "KycDate": "20170904120213"
+                  },
+                  "EntityStatus": "A",
+                  "generatedPackageId": "false",
+                  "CreationDate": "20170904120350",
+                  "LastUpdatedDate": "20170904120350",
+                  "version": "1",
+                  "auditSequence": "1",
+                  "isOverridden": "false",
+                  "_type": "com.ofss.fc.app.party.dto.core.KYCHistoryDTO",
+                  "FinalKYCProcessStage": "CMP",
+                  "createdBy": "anshumana",
+                  "lastUpdatedBy": "anshumana",
+                  "FinalKYCStatus": "CNF",
+                  "InitiationDate": "20170821000000"
+                },
+                "KycMode": "AUT",
+                "version": "1"
+              },
+              "PartyKeyDTO": {
+                "_type": "com.ofss.fc.app.party.dto.core.PartyKeyDTO",
+                "partyId": "121334821"
+              },
+              "isCustomerHubNotificationRequired": "true",
+              "ApplicantProvisionDTO": {
+                "SecurityQuestions": [
+                  {
+                    "id": "24",
+                    "_type": "com.ofss.fc.app.origination.dto.core.application.ApplicantSecurityQuestionDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "answer": "0",
+                    "question": "Number of uncles & aunts I have"
+                  }
+                ],
+                "isAlertRequired": "false",
+                "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantProvisionDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "IdentityDTO": {
+                  "lastName": "MLHWYFCFTK",
+                  "_type": "com.ofss.fc.app.sms.dto.identity.IdentityDTO",
+                  "organization": "admin",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "partyId": "121334821",
+                  "userId": "121334821",
+                  "changePasswordOnNextLogin": "false",
+                  "firstName": "NMJHADVMPE",
+                  "enrollForfa": "false"
+                },
+                "LoginStrategy": "C"
+              },
+              "partySerialNumber": "1",
+              "isIdentityProvisioningRequired": "false",
+              "isPostalAddrSame": "true"
+            },
+            "lastName": "MLHWYFCFTK",
+            "DictionaryArray": [
+              [
+                {
+                  "FactValue": "false",
+                  "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.applicant.CustomizedApplicant.IsHemNccpFlag"
+                },
+                {
+                  "FactValue": "true",
+                  "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.applicant.CustomizedApplicant.ElectronicAlertFlag"
+                },
+                {
+                  "FactValue": "NA",
+                  "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.applicant.CustomizedApplicant.RecDocsOnlineConsent"
+                },
+                {
+                  "FactValue": "20171106000000",
+                  "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.applicant.CustomizedApplicant.ConsentsLastModDate"
+                },
+                {
+                  "FactValue": "false",
+                  "FactName": "com.ofss.fc.cz.nab.domain.origination.entity.core.applicant.CustomizedApplicant.IsAmlCustAttestation"
+                }
+              ]
+            ],
+            "ApplicantKeyDTO": {
+              "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantKeyDTO"
+            },
+            "isExistingCustomer": "true",
+            "applicantSerialNumber": "1",
+            "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantDataDTO",
+            "emailId": "user521414230826801@gmail.com",
+            "isPrimaryApplicant": "true",
+            "ConsentDTO": [
+              {
+                "ConsentType": "ONLINE",
+                "_type": "com.ofss.fc.app.origination.dto.core.applicant.ConsentDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "Id": {
+                  "_type": "com.ofss.fc.app.origination.dto.core.applicant.ConsentKeyDTO",
+                  "ConsentLevelType": "CONTINUE_APPLICATION_ONLINE"
+                },
+                "isConsentAvailable": "false"
+              }
+            ],
+            "ApplicantStatus": "Existing_Party",
+            "firstName": "NMJHADVMPE",
+            "mobileNumber": "0473022223"
+          }
+        ],
+        "ProductDetailsList": [
+          {
+            "_type": "com.ofss.fc.app.origination.dto.core.application.ProductDetailsDTO",
+            "primaryApplicantIndex": "1",
+            "DictionaryArray": [
+              
+            ],
+            "CreditFacilityDTO": [
+              {
+                "KeyDTO": {
+                  "id": "FC20172490085389",
+                  "_type": "com.ofss.fc.app.lcm.dto.limits.facility.FacilityKeyDTO"
+                },
+                "DictionaryArray": [
+                  [
+                    {
+                      "FactValue": "11",
+                      "FactName": "rermainTermInMonths"
+                    },
+                    {
+                      "FactValue": "29",
+                      "FactName": "rermainTermInYears"
+                    },
+                    {
+                      "FactValue": "NHL001",
+                      "FactName": "com.ofss.fc.cz.nab.app.commonservice.dto.workflow.enterpriseenquiry.ProductDetailsTypeDTO.offerId"
+                    }
+                  ]
+                ],
+                "FacilityLVRDetailsDTO": {
+                  "groupLVRBankValueBased": "0",
+                  "groupLVRMarketBased": "0",
+                  "_type": "com.ofss.fc.app.lcm.dto.limits.facility.abstractcreditfacility.FacilityLVRDetailsDTO",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "isManual": "false",
+                  "lendingCategoryCode": "A"
+                },
+                "SanctionedAmount": {
+                  "amount": "119000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "productGroupCode": "LNGP1",
+                "CreditFacilityPurposeDetailsDTO": [
+                  {
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditFacilityPurposeDetailsDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "CreditFacilityPurposeDetailsKeyDTO": {
+                      "id": "FC20172490085389",
+                      "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditFacilityPurposeDetailsKeyDTO",
+                      "code": "020"
+                    },
+                    "generatedPackageId": "false",
+                    "type": "CO",
+                    "version": "1"
+                  }
+                ],
+                "AvailableAmountDTO": {
+                  "amount": "10600",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "remarks": "Update Non portfolio Facility",
+                "CreditAccountDTO": [
+                  {
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditAccountDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "AccountModule": "LN",
+                    "generatedPackageId": "false",
+                    "accountDescription": "NMJHADVMPE MLHWYFCFTK",
+                    "CreditAccountKeyDTO": {
+                      "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditAccountKeyDTO",
+                      "accountId": "263140291",
+                      "facilityId": "FC20172490085389"
+                    },
+                    "version": "1"
+                  }
+                ],
+                "ApproverDetailsDTO": {
+                  "_type": "com.ofss.fc.app.lcm.dto.limits.facility.abstractcreditfacility.FacilityApproverDetailsDTO",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "approverId": "X009342",
+                  "approvalId": "CD0806092017059216"
+                },
+                "isAvailable": "true",
+                "ApprovalType": "2",
+                "version": "3",
+                "FacilityTermDetailsDTO": {
+                  "_type": "com.ofss.fc.app.lcm.dto.limits.facility.abstractcreditfacility.FacilityTermDetailsDTO",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "RequestedTerm": {
+                    "_type": "com.ofss.fc.app.lcm.dto.limits.facilitycategory.FacilityTermDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "numberOfMonths": "0",
+                    "numberOfYears": "30"
+                  },
+                  "ApprovedTerm": {
+                    "_type": "com.ofss.fc.app.lcm.dto.limits.facilitycategory.FacilityTermDTO",
+                    "DictionaryArray": [
+                      
+                    ],
+                    "numberOfMonths": "0",
+                    "numberOfYears": "30"
+                  }
+                },
+                "auditSequence": "1",
+                "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditFacilityDTO",
+                "description": "Home Loan",
+                "isOverArchingLine": "false",
+                "NetUtilizedAmount": {
+                  "amount": "118400",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "marketEntityCode": "NAB",
+                "EffectiveLimitAmount": {
+                  "amount": "119000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "borrowingEntityId": "BE20172480039078",
+                "isReviewRequired": "false",
+                "isRevolving": "false",
+                "FacilityPeriod": {
+                  "_type": "com.ofss.fc.datatype.Period",
+                  "EndDate": "20470919000000",
+                  "BeginDate": "20170906000000"
+                },
+                "currencyCode": "AUD",
+                "AmountBasisType": "FA",
+                "EntityStatus": "A",
+                "facilityCategory": "FCHL01",
+                "generatedPackageId": "false",
+                "CreationDate": "20170919190312",
+                "FacilityType": "CR",
+                "FacilityProductDetailsDTO": {
+                  "isRural": "false",
+                  "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.FacilityProductDetailsDTO",
+                  "isCapitalSubvention": "false",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "isLowDoc": "false",
+                  "isEmployee": "false"
+                },
+                "LastUpdatedDate": "20171116150620",
+                "branchCode": "089998",
+                "businessUnit": "PB",
+                "CreditFacilityCollateralDTO": [
+                  {
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditFacilityCollateralDTO",
+                    "CreditFacilityCollateralKeyDTO": {
+                      "_type": "com.ofss.fc.app.lcm.dto.limits.facility.creditfacility.CreditFacilityCollateralKeyDTO",
+                      "facilityId": "FC20172490085389"
+                    },
+                    "DictionaryArray": [
+                      
+                    ],
+                    "generatedPackageId": "false",
+                    "collateralCode": "COL201724900246545",
+                    "CollateralActionType": "LINK",
+                    "chargeCode": "CHG201724900431773",
+                    "isLimitContributor": "false",
+                    "version": "1"
+                  }
+                ],
+                "isProgressiveCredit": "false",
+                "createdBy": "X009175",
+                "lastUpdatedBy": "X008058",
+                "LimitAmount": {
+                  "amount": "119000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "RequestedLimitAmount": {
+                  "amount": "129000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "isAutoReviewRequired": "false"
+              }
+            ],
+            "LoanProductGroupLinkageDTO": {
+              "isCollateralRequired": "true",
+              "ProductGroupNature": "A",
+              "isPreApproved": "false",
+              "DictionaryArray": [
+                {
+                  "_type": "com.ofss.fc.framework.domain.common.dto.Dictionary",
+                  "NameValuePairDTOArray": [
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.SourceOfFunds"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "false",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.IsManualLmiFlg"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "false",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.IsFetchExposureClicked"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.CollUsedAtFEClick"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "false",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.IsProductSwap"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.LatestPolicyNumber"
+                    },
+                    {
+                      "_type": "com.ofss.fc.framework.domain.common.dto.NameValuePairDTO",
+                      "value": "false",
+                      "genericName": "com.ofss.fc.cz.nab.domain.origination.entity.lending.loan.pg.CustomizedLoanProductGroupLinkage.IsComplexLmiFlg"
+                    }
+                  ]
+                }
+              ],
+              "isFundingTableRequired": "true",
+              "isCCIOpted": "false",
+              "productGroupId": "LNGP1",
+              "productClass": "LN",
+              "RequestedAmount": {
+                "amount": "129000",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "isCCICapitalized": "false",
+              "purpose": "020",
+              "ApprovedTenor": {
+                "_type": "com.ofss.fc.datatype.dto.DurationDTO",
+                "months": "0",
+                "days": "0",
+                "years": "30"
+              },
+              "ProductGroupLinkageType": "LOAN",
+              "RequestedTenor": {
+                "_type": "com.ofss.fc.datatype.dto.DurationDTO",
+                "months": "0",
+                "days": "0",
+                "years": "30"
+              },
+              "isMOF": "false",
+              "facilityDescription": "Home Loan",
+              "currency": "AUD",
+              "_type": "com.ofss.fc.app.origination.dto.lending.loan.LoanProductGroupLinkageDTO",
+              "isLMICapitalized": "true",
+              "ApprovedAmount": {
+                "amount": "119000",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "preApprovedLimitRefId": "448f921400000001015fc43026bf02bb",
+              "isBundleFeeWaived": "false",
+              "PurchasePropertyLinkageDTO": [
+                {
+                  "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.PurchasePropertyLinkageDTO",
+                  "propertySelectedForFee": "false",
+                  "PurchasePropertyLinkageKeyDTO": {
+                    "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.PurchasePropertyLinkageKeyDTO",
+                    "productGroupSerialNumber": "1",
+                    "purchasedPropertyID": "PRP20171106000031301"
+                  }
+                }
+              ],
+              "ApplicationRequestType": "AMEND",
+              "ProductGroupLinkageKeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.pg.ProductGroupLinkageKeyDTO",
+                "productGroupSerialNumber": "1"
+              },
+              "isLMIApplicable": "false",
+              "borrowingEntityId": "BE20172480039078",
+              "PurposeType": "CO",
+              "isSettlementRequired": "true",
+              "isLRMApplicable": "true",
+              "isFeeCapitalizationApplicable": "true",
+              "facilityCategory": "FCHL01",
+              "isLinkedToBundle": "true",
+              "UnCapFacilityAmount": {
+                "amount": "129000",
+                "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                "currencyCode": "AUD"
+              },
+              "isCoveredByConsumerProtection": "true",
+              "facilityId": "FC20172490085389",
+              "isBundleFeeNegotiated": "false",
+              "AmendDetailsDTO": {
+                "OriginalRequestedAmount": {
+                  "amount": "119000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "DictionaryArray": [
+                  
+                ],
+                "generatedPackageId": "false",
+                "isCollateralAdded": "false",
+                "isCollateralDelinked": "false",
+                "OriginalRequestedTerm": {
+                  "_type": "com.ofss.fc.datatype.dto.DurationDTO",
+                  "months": "0",
+                  "days": "0",
+                  "years": "30"
+                },
+                "hasTermIncreased": "false",
+                "version": "1",
+                "auditSequence": "1",
+                "_type": "com.ofss.fc.app.origination.dto.lending.core.amend.AmendDetailsDTO",
+                "isBorrowerDelinked": "false",
+                "originalBorrowingEntity": "BE20172480039078",
+                "hasAmountDecreased": "false",
+                "isBorrowerAdded": "false",
+                "hasAmountIncreased": "true",
+                "OriginalApplicantProductGroupReferences": [
+                  {
+                    "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantProductGroupReferenceDTO",
+                    "RelationShip": "APPLICANT",
+                    "KeyDTO": {
+                      "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantProductGroupReferenceKeyDTO",
+                      "applicantId": "121334821",
+                      "productGroupSerialNumber": "1"
+                    },
+                    "DictionaryArray": [
+                      
+                    ],
+                    "partyId": "121334821",
+                    "applicantName": "NMJHADVMPE MLHWYFCFTK",
+                    "applicantSerialNumber": "1"
+                  }
+                ],
+                "hasTermDecreased": "false",
+                "OriginalCollateralProductGroupLinkages": [
+                  {
+                    "auditSequence": "1",
+                    "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.CollateralProductGroupLinkageDTO",
+                    "KeyDTO": {
+                      "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.CollateralProductGroupLinkageKeyDTO",
+                      "collateralId": "COL201724900246545",
+                      "productGroupSerialNumber": "1"
+                    },
+                    "DictionaryArray": [
+                      
+                    ],
+                    "collateralId": "COL201724900246545",
+                    "collateralDescription": "new pledge",
+                    "generatedPackageId": "false",
+                    "version": "1"
+                  }
+                ]
+              },
+              "isCCIApplicable": "true",
+              "CollateralProductGroupLinkageDTOs": [
+                {
+                  "auditSequence": "1",
+                  "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.CollateralProductGroupLinkageDTO",
+                  "KeyDTO": {
+                    "_type": "com.ofss.fc.app.origination.dto.lending.core.pg.CollateralProductGroupLinkageKeyDTO",
+                    "collateralId": "COL201724900246545",
+                    "productGroupSerialNumber": "1"
+                  },
+                  "collateralId": "COL201724900246545",
+                  "collateralDescription": "new pledge",
+                  "generatedPackageId": "false",
+                  "version": "1"
+                }
+              ],
+              "isFeeCapitalized": "false",
+              "productGroupName": "Home Loan",
+              "borrowingEntityName": "NMJHADVMPE MLHWYFCFTK",
+              "isGeneralInsuranceOpted": "true",
+              "ApplicantProductGroupReference": [
+                {
+                  "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantProductGroupReferenceDTO",
+                  "isCciPolicyLinked": "false",
+                  "RelationShip": "APPLICANT",
+                  "KeyDTO": {
+                    "_type": "com.ofss.fc.app.origination.dto.core.applicant.ApplicantProductGroupReferenceKeyDTO",
+                    "productGroupSerialNumber": "1"
+                  },
+                  "partyId": "121334821",
+                  "applicantSerialNumber": "1"
+                }
+              ],
+              "ProductOfferReferenceDTOs": [
+                {
+                  "isSettlementRequired": "false",
+                  "isOfferSelectedForAccount": "false",
+                  "KeyDTO": {
+                    "_type": "com.ofss.fc.app.origination.dto.core.pg.OfferReferenceKeyDTO",
+                    "productReferenceNumber": ""
+                  },
+                  "DictionaryArray": [
+                    
+                  ],
+                  "productCode": "LN401",
+                  "isOfferSwap": "false",
+                  "productGroupSerialNumber": "1",
+                  "generatedPackageId": "false",
+                  "isNominatedForCapitalization": "false",
+                  "bundleReferenceId": "BR0611170010031",
+                  "facilityId": "FC20172490085389",
+                  "offerSerialNumber": "1",
+                  "version": "1",
+                  "currency": "AUD",
+                  "auditSequence": "1",
+                  "_type": "com.ofss.fc.app.origination.dto.core.pg.OfferReferenceDTO",
+                  "isNominatedForBundleFees": "false",
+                  "isBundleOpted": "true",
+                  "bundleId": "BC02",
+                  "bundleName": "NAB Private Package",
+                  "isNominatedForFacilityFees": "false",
+                  "isNominatedForFeesAndPremium": "false",
+                  "offerName": "NAB Tailored Home Loan",
+                  "offerId": "NHL001"
+                }
+              ],
+              "isLEFApplicable": "false"
+            },
+            "ApplicationRequestType": "AMEND",
+            "ProductGroupLinkageType": "LOAN",
+            "borrowingEntity": "BE20172480039078"
+          }
+        ],
+        "generatedPackageId": "false",
+        "version": "1",
+        "auditSequence": "1",
+        "SubmissionType": "AO",
+        "_type": "com.ofss.fc.app.origination.dto.core.submission.SubmissionInputDTO",
+        "BundleDetailsDTO": {
+          "isFirstCallOnBundleSelection": "true",
+          "BundleDetailsKeyDTO": {
+            "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleDetailsKeyDTO",
+            "bundleReferenceId": "BR0611170010031",
+            "submissionId": "SUB089061117310980"
+          },
+          "generatedPackageId": "false",
+          "offerIdNominatedForFees": "NCS001",
+          "BundleOfferReferences": [
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXXPQF",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXXPQF",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": " NAB Qantas Rewards Premium Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "1",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NHL001",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "LINKED",
+              "productCode": "LN401",
+              "productGroupId": "LNGP1",
+              "productClass": "LN",
+              "generatedPackageId": "false",
+              "currency": "AUD",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "true",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Tailored Home Loan",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NCS005",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "CS305",
+              "productGroupId": "CSG12",
+              "productClass": "CS",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "true",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Flexiplus Mortgage",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VEXGLD",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VEXGLD",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": " NAB Premium Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NCS001",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "CS301",
+              "productGroupId": "CSGP3",
+              "productClass": "CS",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "true",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "true",
+              "offerName": "NAB Classic Banking",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NCS002",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "CS301",
+              "productGroupId": "CSGP3",
+              "productClass": "CS",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "true",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Retirement Banking",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VEXLRC",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VEXLRC",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Low Rate Platinum",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VSSCDD",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VSSCDD",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Low Rate Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXZZNR",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXZZNR",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Rewards Signature Card",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXSPNR",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXSPNR",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Rewards Classic Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NCS004",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "CS301",
+              "productGroupId": "CSGP3",
+              "productClass": "CS",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Gold Banking Private",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXXPNR",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXXPNR",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Rewards Platinum Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXZZQF",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXZZQF",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Qantas Rewards Signature Card",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VSSCLS",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VSSCLS",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": " NAB Low Fee Card VISA",
+              "isPGCreationRequired": "false"
+            },
+            {
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceKeyDTO",
+                "productGroupSerialNumber": "0",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "VXSSQF",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "ELIGIBLE",
+              "productCode": "VXSSQF",
+              "productGroupId": "CCG01",
+              "productClass": "CC",
+              "generatedPackageId": "false",
+              "version": "1",
+              "auditSequence": "1",
+              "isBundleOfferSelected": "false",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleOfferReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "offerName": "NAB Qantas Rewards Card VISA",
+              "isPGCreationRequired": "false"
+            }
+          ],
+          "version": "1",
+          "auditSequence": "1",
+          "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleDetailsDTO",
+          "BundleAccountReferences": [
+            {
+              "auditSequence": "1",
+              "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleAccountReferenceDTO",
+              "isNominatedForBundleFees": "false",
+              "KeyDTO": {
+                "_type": "com.ofss.fc.app.origination.dto.core.bundle.BundleAccountReferenceKeyDTO",
+                "accountId": "263140291",
+                "bundleReferenceId": "BR0611170010031",
+                "offerId": "NHL001",
+                "submissionId": "SUB089061117310980"
+              },
+              "BundleLinkageStatus": "LINKED",
+              "accountStatus": "Regular",
+              "generatedPackageId": "false",
+              "partyFullName": "",
+              "version": "1",
+              "AccountType": "LN",
+              "currency": "AUD"
+            }
+          ],
+          "isExistingBundle": "false",
+          "bundleId": "BC02",
+          "isBundleSelectedFromRecommendation": "true",
+          "bundleName": "NAB Private Package",
+          "isSelectedFromAppForm": "true"
+        },
+        "maxProductGroupSerialNumber": "1",
+        "CollateralDTOs": [
+          {
+            "CategorizationValue": {
+              "amount": "750000",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "DictionaryArray": [
+              [
+                {
+                  "FactValue": "U",
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine5"
+                },
+                {
+                  "FactValue": "100",
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine6"
+                },
+                {
+                  "FactValue": "Miller",
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine7"
+                },
+                {
+                  "FactValue": "ST",
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine8"
+                },
+                {
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine9"
+                },
+                {
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine10"
+                },
+                {
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine11"
+                },
+                {
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.AddressLine12"
+                },
+                {
+                  "FactName": "com.ofss.fc.cz.nab.domain.lcm.entity.collaterals.cash.CustomizedTermDeposit.Status"
+                }
+              ]
+            ],
+            "collateralDescription": "new pledge",
+            "collateralCategoryType": "TERM_DEPOSIT",
+            "CapitalizationValue": {
+              "amount": "0",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "CollateraKeyDTO": {
+              "id": "COL201724900246545",
+              "_type": "com.ofss.fc.app.lcm.dto.collaterals.CollateraKeyDTO"
+            },
+            "version": "2",
+            "auditSequence": "1",
+            "_type": "com.ofss.fc.app.lcm.dto.collaterals.cash.TermDepositDTO",
+            "revaluationRequired": "false",
+            "BankValue": {
+              "amount": "750000",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "Duration": {
+              "_type": "com.ofss.fc.datatype.Period",
+              "BeginDate": "20170906000000"
+            },
+            "OwnerEstimatedValue": {
+              "amount": "750000",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "CollateralType": "CASH",
+            "bankHaircutValue": "0",
+            "MarketValue": {
+              "amount": "750000",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "categorizationHaircutValue": "0",
+            "EntityStatus": "A",
+            "generatedPackageId": "false",
+            "CreationDate": "20170919184810",
+            "available": "true",
+            "LastUpdatedDate": "20170919190055",
+            "ChargeDTOs": [
+              {
+                "ChargeNatureType": "SL",
+                "CollateralPerfectionDTO": {
+                  "registrationRequired": "false",
+                  "_type": "com.ofss.fc.app.lcm.dto.collaterals.chrage.CollateralPerfectionDTO",
+                  "stampingRequired": "false",
+                  "DictionaryArray": [
+                    
+                  ],
+                  "ExecutionDate": "20170906000000",
+                  "StampingAmount": {
+                    "amount": "0",
+                    "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                    "currencyCode": "AUD"
+                  },
+                  "RegistrationAmount": {
+                    "amount": "0",
+                    "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                    "currencyCode": "AUD"
+                  }
+                },
+                "DictionaryArray": [
+                  
+                ],
+                "generatedPackageId": "false",
+                "bankName": "08",
+                "CreationDate": "20170919184810",
+                "LastUpdatedDate": "20170919190055",
+                "version": "1",
+                "ChargeStatus": "EX",
+                "auditSequence": "1",
+                "ChargeAmount": {
+                  "amount": "750000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                },
+                "_type": "com.ofss.fc.app.lcm.dto.collaterals.chrage.ChargeDTO",
+                "createdBy": "SHUVADIPC",
+                "priority": "1",
+                "lastUpdatedBy": "X009281",
+                "ChargeKeyDTO": {
+                  "id": "CHG201724900431773",
+                  "_type": "com.ofss.fc.app.lcm.dto.collaterals.chrage.ChargeKeyDTO",
+                  "collateralId": "COL201724900246545"
+                },
+                "chargeType": "TDSET"
+              }
+            ],
+            "BankValueReliedOn": {
+              "amount": "750000",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "OwnershipType": "S",
+            "collateralSubCategory": "TermDeposit",
+            "createdBy": "SHUVADIPC",
+            "ContractOfSaleValue": {
+              "amount": "0",
+              "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+              "currencyCode": "AUD"
+            },
+            "ProposedTermDepositDTOs": [
+              {
+                "_type": "com.ofss.fc.app.lcm.dto.collaterals.cash.ProposedTermDepositDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "ExpectedOpeningDate": "20171012000000",
+                "noticeDays": "111017",
+                "collateralId": "COL201724900246545",
+                "maturityMonths": "60",
+                "DepositStatus": "PROPOSED",
+                "expectedOpeningDays": "45",
+                "depositProposalId": "CDP201724900008913",
+                "ProposedValue": {
+                  "amount": "750000",
+                  "_type": "com.ofss.fc.datatype.dto.MoneyDTO",
+                  "currencyCode": "AUD"
+                }
+              }
+            ],
+            "exclusiveCharge": "false",
+            "lastUpdatedBy": "X009281",
+            "Address": {
+              "zip": "2060",
+              "_type": "com.ofss.fc.datatype.Address",
+              "line8": "ST",
+              "line6": "100",
+              "line7": "Miller",
+              "line5": "U",
+              "state": "NSW",
+              "country": "AU",
+              "city": "NORTH SYDNEY",
+              "line2": "1C"
+            },
+            "LienDetailsDTOs": [
+              
+            ],
+            "Ownership": [
+              {
+                "partyName": "NMJHADVMPE XPPPPPPPP MLHWYFCFTK",
+                "_type": "com.ofss.fc.app.lcm.dto.collaterals.OwnershipDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "percentage": "100",
+                "partyId": "121334821",
+                "collateralId": "COL201724900246545"
+              }
+            ]
+          }
+        ],
+        "skipBundleRecommendationFlag": "false",
+        "SubmissionRequestType": "AO",
+        "maxApplicantSerialNumber": "1"
+      },
+      "inBoolean3": "true"
+    }
+  }
+}

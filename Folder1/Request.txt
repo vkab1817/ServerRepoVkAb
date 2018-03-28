@@ -1,0 +1,86 @@
+{
+  "Request": {
+    "inSessionContext1": {
+      "_type": "com.ofss.fc.app.context.SessionContext",
+      "TransactionBranch": "089998",
+      "Channel": "BRN",
+      "ExternalSystemAuditTrailNumber": "0",
+      "ExternalBatchNumber": "0",
+      "BankCode": "08",
+      "UserId": "X008058",
+      "ServiceCallContextType": "N",
+      "LocalDateTimeText": "20171113145415",
+      "TargetUnit": "PB",
+      "SupervisorContext": {
+        "_type": "com.ofss.fc.app.context.UserContext"
+      }
+    },
+    "Service": "BundleRecommendationApplicationServiceSpiVOFacadeService",
+    "Operation": "public com.ofss.fc.app.account.offerbundling.dto.recommendation.BundleRecommendationResponse com.ofss.fc.appx.account.offerbundling.service.recommendation.vo.BundleRecommendationApplicationServiceSpiVOFacade.recommendBundles(com.ofss.fc.app.context.SessionContext,com.ofss.fc.app.account.offerbundling.dto.recommendation.BundleRecommendationRequestDTO,com.ofss.fc.app.account.dto.transaction.FeeDetailsDTO,com.ofss.fc.app.udf.udfservice.dto.LinkedUDFDTO,com.ofss.fc.framework.domain.WorkItemViewObjectDTO[]) throws com.ofss.fc.infra.exception.FatalException,com.ofss.fc.infra.exception.ServiceException",
+    "TxnData": {
+      "inBundleRecommendationRequestDTO2": {
+        "showPartiallyQualifiedBundles": "true",
+        "_type": "com.ofss.fc.app.account.offerbundling.dto.recommendation.BundleRecommendationRequestDTO",
+        "DictionaryArray": [
+          
+        ],
+        "showFullyQualifiedBundles": "true",
+        "SubscriptionDetailsDTO": [
+          {
+            "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscriptionDetailsDTO",
+            "currencyCode": "AUD",
+            "DictionaryArray": [
+              
+            ],
+            "SubscribingPartyDetails": [
+              {
+                "isExisting": "true",
+                "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscribingPartyDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "partyId": "121353942"
+              },
+              {
+                "isExisting": "true",
+                "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscribingPartyDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "partyId": "121354005"
+              }
+            ],
+            "offerId": "NHL001"
+          },
+          {
+            "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscriptionDetailsDTO",
+            "currencyCode": "AUD",
+            "DictionaryArray": [
+              
+            ],
+            "SubscribingPartyDetails": [
+              {
+                "isExisting": "true",
+                "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscribingPartyDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "partyId": "121353942"
+              },
+              {
+                "isExisting": "true",
+                "_type": "com.ofss.fc.app.account.offerbundling.dto.SubscribingPartyDTO",
+                "DictionaryArray": [
+                  
+                ],
+                "partyId": "121354005"
+              }
+            ],
+            "offerId": "NHL001"
+          }
+        ],
+        "showAlreadyOwnedBundles": "true"
+      }
+    }
+  }
+}
