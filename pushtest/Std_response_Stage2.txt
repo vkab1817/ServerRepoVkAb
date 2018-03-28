@@ -1,0 +1,255 @@
+<ValuationTransaction ProductionData="No">
+   <RevisionNumber LIXIVersion="1.4" LenderVersion="1.0" UserVersion="1.0" UserType="Valuer"/>
+   <Identifier UniqueID="VXJ-000001594362" Type="VPMAssigned" Description="Valex Reference Number"/>
+   <Identifier UniqueID="0208916000033286" Type="LenderAssigned" Description="RequestID"/>
+   <Identifier UniqueID="COL201608900267707" Type="LenderAssigned" Description="Security"/>
+   <Identifier UniqueID="1502294" Type="ValuerAssigned" Description="Valuer&apos;s File Reference"/>
+   <Date>2016-03-29</Date>
+   <Time>14:51:43+10:30</Time>
+   <Comment>Number of bedrooms: 4
+Number of bathrooms: 4</Comment>
+   <Publisher>
+      <RelatedEntityRef RelatedID="VXV-000001"/>
+   </Publisher>
+   <Audience>
+      <RelatedEntityRef RelatedID="VXF-000038"/>
+   </Audience>
+   <Message>
+      <Identifier UniqueID="Dummy_Value" Type="VPMAssigned"/>
+      <MessageRelatesTo>
+         <Identifier UniqueID="VXJ-000001594362" Type="VPMAssigned"/>
+         <Identifier UniqueID="0208916000033286" Type="BrokerAssigned"/>
+      </MessageRelatesTo>
+      <MessageBody Type="Information">
+         <Status Name="ValuationCompleted">
+            <Date>2016-03-29</Date>
+            <Time>14:51:41+11:00</Time>
+         </Status>
+      </MessageBody>
+      <MessageBody Type="Information">
+         <Event Name="ValReport">
+            <Date>2016-03-29</Date>
+            <Time>14:51:42+11:00</Time>
+         </Event>
+      </MessageBody>
+      <ValuationType>
+         <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+         <RestrictedAccessAssessment ResultRequired="Range" ReasonFor="Other" InterestInProperty="Other" ValSubType="ShortForm">
+            <SubTypeNote>Kerbside</SubTypeNote>
+            <RealEstate Status="Established" Construction="No" MortgageInsurance="No" Occupancy="OwnerPrimary" LandAreaHectares="0" Transaction="Refinancing">
+               <Identifier UniqueID="1027762" Type="VPMAssigned" Description="RP ID"/>
+               <Residential Type="Other"/>
+               <EstimatedValue EstimateBasis="CertifiedValuation">130000</EstimatedValue>
+               <Location>
+                  <Address>
+                     <BuildingName/>
+                     <FloorNo/>
+                     <UnitNo/>
+                     <StreetNo>92-100</StreetNo>
+                     <Street Type="Street">ALINGA</Street>
+                     <City>CITY</City>
+                     <State Name="ACT"/>
+                     <Postcode>2601</Postcode>
+                     <Country>AU</Country>
+                  </Address>
+                  <Title IsPrimaryTitle="Yes"/>
+               </Location>
+            </RealEstate>
+            <PropertyCharacteristics CurrentUse="Residential" ExternalCondition="Unknown" InternalCondition="Unknown" InternalLayout="Unknown" MainBuilding="Yes" MineSubsidence="Yes" NumberOfBathrooms="4" NumberOfBedrooms="4" OtherServicesDescription="" PCItems="" SiteArea="185.8" SiteAreaUnits="SquareMeters" StreetAppeal="Unknown" YearBuilt=""/>
+            <Zoning ZoningType="Other" OtherDescription="" LocalGovtAuthority="CITY" ZoningEffect=""/>
+            <DetailedComment>
+               <RelatedEntityRef RelatedID="Dummy_value"/>
+               <Comment>TEst notes test notes test notes</Comment>
+            </DetailedComment>
+            <RequestedPriority Indicator="Normal">
+               <Date>2016-02-17</Date>
+               <Time>09:37:12</Time>
+            </RequestedPriority>
+            <FeeSegment>
+               <Fee Amount="44" Description="Valuation" Class="Valuer">
+                  <Identifier UniqueID="1565486" Type="ValuerAssigned" Description="InvoiceNumber"/>
+               </Fee>
+            </FeeSegment>
+            <ResponseSupportingDoc DocAttached="Yes" RequestorToSight="No" DocType="Other">
+               <Identifier UniqueID="1565486" Type="ValuerAssigned" Description="InvoiceNumber"/>
+            </ResponseSupportingDoc>
+            <ResponseSupportingDoc DocAttached="Yes" RequestorToSight="No" DocType="Report">
+               <Identifier UniqueID="VXDR-0001502294" Type="VPMAssigned"/>
+               <Description>Valuation Report</Description>
+            </ResponseSupportingDoc>
+            <RiskAnalysis Marketability="" OverallRiskAnalysis="">
+               <RiskRating RatingType="LocationNeighbourhood" Rating="1-Low">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="Land" Rating="1-Low">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="Environmental" Rating="1-Low">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="Improvements" Rating="1-Low">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="MarketVolatility" Rating="0-NotKnown">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="LocalEconomy" Rating="0-NotKnown">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="MarketSegment" Rating="0-NotKnown">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="Other" Rating="1-Low">
+                  <Identifier UniqueID="Dummy_Value" Type="ValuerAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <RiskRating RatingType="Other" Rating="0-NotKnown">
+                  <Identifier UniqueID="overall" Type="VPMAssigned"/>
+                  <Comment/>
+               </RiskRating>
+               <Securitisation Flood="No" Electrical="No" Encroachments="No" MainRoads="No" Rail="No" Pests="No"/>
+            </RiskAnalysis>
+            <ValueComponent LandValue="450000" ImprovementsValue="250000" RecommendedSecurity="Yes" LikelyWeeklyUnfRental="0">
+               <MarketValueAsIfComplete Type="SinglePoint" ValueFloor="0" ValueCeiling="700000">
+                  <Description>Existing Property</Description>
+               </MarketValueAsIfComplete>
+               <EstimatedSettlement>
+                  <Duration Units="Months"/>
+               </EstimatedSettlement>
+               <Comment>Value Component</Comment>
+               <ExpectedSellingPeriodComment/>
+            </ValueComponent>
+            <MarketValueAsIfComplete Type="Range" ValueFloor="0" ValueCeiling="700000">
+               <Description/>
+            </MarketValueAsIfComplete>
+         </RestrictedAccessAssessment>
+      </ValuationType>
+   </Message>
+   <RelatedPartySegment>
+      <RelatedParty RelPartyType="ValuationPanelManager">
+         <Identifier UniqueID="VXV-000001" Type="VPMAssigned"/>
+         <CompanyName BusinessName="Valuation Exchange"/>
+         <Address>
+            <BuildingName/>
+            <FloorNo/>
+            <UnitNo/>
+            <StreetNo/>
+            <Street/>
+            <City>ADELAIDE</City>
+            <State Name="SA"/>
+            <Postcode>5000</Postcode>
+            <Country>AU</Country>
+         </Address>
+         <WorkPhone>
+            <Phone>
+               <Fax>1300550167</Fax>
+            </Phone>
+            <Phone>
+               <FixedPhone>1300660051</FixedPhone>
+            </Phone>
+         </WorkPhone>
+         <Email Type="Work">valuationplacement@valex.com.au</Email>
+      </RelatedParty>
+      <RelatedParty RelPartyType="ValuationFirm">
+         <Identifier UniqueID="VXV-000666" Type="VPMAssigned"/>
+         <CompanyName BusinessName="NABVals ACT"/>
+         <Address>
+            <BuildingName/>
+            <FloorNo/>
+            <UnitNo/>
+            <StreetNo>120</StreetNo>
+            <Street Type="Street">Spencer</Street>
+            <City>MELBOURNE</City>
+            <State Name="VIC"/>
+            <Postcode>3000</Postcode>
+            <Country>AU</Country>
+         </Address>
+         <WorkPhone>
+            <Phone>
+               <Fax/>
+            </Phone>
+            <Phone>
+               <FixedPhone AreaCode="03">86979041</FixedPhone>
+            </Phone>
+         </WorkPhone>
+         <Email Type="Work"/>
+      </RelatedParty>
+      <RelatedParty RelPartyType="Lender" RelPartyDescription="Challenger Mortgage Management Pty Limited, Fox Symes Home Loans (Services) Pty Limited, National Australia Bank and its related team members">
+         <Identifier UniqueID="VXCL-012123" Type="VPMAssigned"/>
+         <CompanyName BusinessName="NAB"/>
+         <PersonName>
+            <FirstName>Testuser67</FirstName>
+            <AlsoKnownAs>X008081</AlsoKnownAs>
+            <Surname>Testuser67</Surname>
+         </PersonName>
+         <WorkPhone>
+            <Phone>
+               <Fax/>
+            </Phone>
+            <Phone>
+               <FixedPhone/>
+            </Phone>
+            <Phone>
+               <Mobile/>
+            </Phone>
+         </WorkPhone>
+         <Email Type="Work">X008081@nab.com.au</Email>
+      </RelatedParty>
+      <RelatedParty RelPartyType="Lender">
+         <Identifier UniqueID="VXF-000038" Type="VPMAssigned"/>
+         <CompanyName BusinessName="National Australia Bank"/>
+         <Address>
+            <BuildingName/>
+            <FloorNo/>
+            <UnitNo/>
+            <StreetNo>222</StreetNo>
+            <Street Type="Street">King William</Street>
+            <City>ADELAIDE</City>
+            <State Name="SA"/>
+            <Postcode>5000</Postcode>
+            <Country>AU</Country>
+         </Address>
+         <WorkPhone>
+            <Phone>
+               <Fax>1300550167</Fax>
+            </Phone>
+            <Phone>
+               <FixedPhone AreaCode="08">84076580</FixedPhone>
+            </Phone>
+         </WorkPhone>
+      </RelatedParty>
+      <RelatedParty RelPartyType="Valuer">
+         <Identifier UniqueID="VXVLR-004239" Type="VPMAssigned"/>
+         <PersonName>
+            <FirstName>NV Valuer</FirstName>
+            <Surname>One</Surname>
+         </PersonName>
+         <WorkPhone>
+            <Phone>
+               <FixedPhone AreaCode="08">41155114</FixedPhone>
+            </Phone>
+            <Phone>
+               <Fax>1300111440</Fax>
+            </Phone>
+            <Phone>
+               <Mobile>0401000000</Mobile>
+            </Phone>
+         </WorkPhone>
+         <ProfessionalInfrastructure>
+            <Accreditation Type="Licence" AccreditationID="34567">
+               <Identifier UniqueID="VXVLR-004239" Type="ValuerAssigned"/>
+            </Accreditation>
+         </ProfessionalInfrastructure>
+      </RelatedParty>
+   </RelatedPartySegment>
+   <nab:Loan xmlns:nab="https://vx.valex.com.au/lixi/schema/nab/0.1/#">
+      <nab:bicoeStage>N/A</nab:bicoeStage>
+   </nab:Loan>
+</ValuationTransaction>
